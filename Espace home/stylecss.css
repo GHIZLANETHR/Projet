@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width:100%;
+    background-image:
+     linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+ /* dropdown menu style */
+ .dropdown-menu {
+    display: none;
+  }
+  
+  .nav-links ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+     background-color: lightslategray;
+  }
+  
+  .nav-links ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+  }
+  
+  .nav-links ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+  }
+  
+  .dropdown-menu-1 {
+    display: none;
+  }
+  
+  .dropdown-menu ul li:hover .dropdown-menu-1 {
+    display: block;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    background-color: lightslategray;
+  }
+  /*end*/
+  .nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  .nav-links ul li::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    background: #FFC436;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .nav-links ul li:hover::after{
+    width: 100%;
+  }
+  .text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  .text-box h1{
+    font-size: 62px;
+  }
+  .text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+  }
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #0C356A;
+    background: #0C356A;
+    transition: 1s;
+}
+/*@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+}*/
+/*about*/
+
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+.about .row .image{
+    flex: 1 1 40rem;
+    
+}
+.about .row .image img{
+    width: 100%;
+    margin-bottom: 100px;
+}
+.about .row .image a{
+    height: 20px;
+    width: 10px;
+    
+}
+.about .row .content{
+    text-align: center;
+    flex: 1 1 40rem;
+    font-size: 10px;
+}
+.about .row .content h3{
+    font-size: 3rem;
+    color: black;
+    margin-right: 30px;
+}
+.about .row .content p{
+    padding: 1rem 0;
+    line-height: 2;
+    font-size: 1.6rem;
+    color:lightslategray;
+    margin-top: 10px;
+    margin-right: 70px;
+    text-align: justify;
+}
+.btn{
+    display: inline-block;
+    margin-top: 50px;
+    border-radius: 3rem;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-right: 70px;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: #0C356A;
+    color: #fff;
+}
+
+
+
+.cours {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-right: 100px;
+    margin-left: 30px;
+    display: flex; /* Utilisation de flexbox pour aligner les éléments en ligne */
+    align-items: center;
+}
+.cours img {
+    max-width: 15%; /* Pour assurer que l'image ne dépasse pas la largeur de son conteneur */
+    border-right: 1px solid #ddd; /* Une bordure inférieure pour séparer l'image du texte */
+    margin-right: 10px; /* Marge inférieure pour espacer l'image du texte */
+}
+.course h2{
+    font-size: 3rem;
+    color: black;
+    margin-top: 2px;
+    text-align: center;
+}
+.btn-pdf1{
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 400px;
+    border-radius: 5rem;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    text-decoration: none;
+}
+.btn-pdf1:hover{
+    background-color: #0C356A;
+    color: #fff;
+}
+
+
+
+.emplois-temps {
+    margin-top: 40px;
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-bottom: 30px;
+        margin-right: 100px;
+        margin-left: 30px;
+        display: flex; /* Utilisation de flexbox pour aligner les éléments en ligne */
+        align-items: center;
+    
+}
+
+.emplois-temps img {
+    max-width: 15%; /* Pour assurer que l'image ne dépasse pas la largeur de son conteneur */
+    border-right: 1px solid #ddd; /* Une bordure inférieure pour séparer l'image du texte */
+    margin-right: 10px; /* Marge inférieure pour espacer l'image du texte */
+}
+.emplois h2{
+    font-size: 3rem;
+    color: black;
+    margin-top: 100px;
+    text-align: center;
+}
+.btn-pdf{
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 100px;
+    border-radius: 5rem;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    text-decoration: none;
+}
+.btn-pdf:hover{
+    background-color: #0C356A;
+    color: #fff;
+}
+.contact .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.contact .row .image{
+    flex: 1 1 40rem;
+   
+}
+.contact .row .image img{
+    width: 100%;
+    margin-bottom: 100px;
+}
+.contact .row form{
+    flex: 1 1 40rem;
+}
+.contact .row form .box{
+    width: 90%;
+    margin-top: 2px;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    background-color: transparent;
+    font-size: .9rem;
+    color: black;
+    padding: 1.4rem;
+    text-transform: none;
+}
+.contact .row form span{
+    font-size: 1.2rem;
+    color: black;
+}
+.contact .row form .radio{
+    margin-top: 3px;
+    margin-bottom: 1px;
+}
+.contact .row form .radio label{
+    font-size: 1.2rem;
+    color:black;
+    margin-left: 1.5px;
+}
+.contact .row form .radio #female{
+    margin-left: 2rem;
+}
+.contact .row form .radio input{
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+.contact .row form .radio input:checked{
+    background-color: #0174BE;
+    border-radius: 5rem;
+}
+.contact .row form .radio #female:checked ~ label[for="female"]{
+    color: #0174BE;
+}
+.contact .row form .radio #male:checked ~ label[for="male"]{
+    color: #0174BE;
+}
+.contact .heading {
+    font-size: 3rem;
+    color: black;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.btn-send{
+    display: inline-block;
+    margin-top: 2px;
+    margin-left: 350px;
+    margin-bottom: 20px;
+    border-radius: 5rem;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    text-decoration: none;
+}
+.btn-send:hover{
+    background-color: #0C356A;
+    color: #fff;
+    
+}
+
+.footer{
+    background-color:#111 ;
+    text-align: center;
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.footer .share {
+ display: flex;
+ justify-content: center;
+}
+.footer .share a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.footer .share i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+.footer .share a:hover{
+    background-color: #111;
+    transition: 0.5;
+}
+.footer .share a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footer .credit{
+    margin-top: 2.5rem;
+    padding: 2rem;
+    padding-top: 2.5rem;
+    border-top: .1rem solide white;
+    color: white;
+}
+.header h1{
+    color: #FFC436;
+    margin-left: 0px;
+}
+
+
+
+
